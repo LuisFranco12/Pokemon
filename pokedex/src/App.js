@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react"
 import { FetchPokemonList } from "./api/FetchPokemonList"
+import { Routes, Route } from "react-router-dom"
 import DisplayPokemon from "./components/DisplayPokemon/DisplayPokemon"
+import Navbar from "./components/Navbar/Navbar"
 import  GlobalStyles  from "./GlobalStyles"
+import About from "./Pages/About/About"
 function App() {
   const [pokemonList, setPokemonList] = useState(null)
   const [loading, setLoading] = useState(false)
@@ -28,13 +31,20 @@ function App() {
 
     return (
       <>
-        <DisplayPokemon 
-          pokemonList={currentPokemon} 
-          loading={loading}
-          pokemonPerPage={pokemonPerPage}
-          totalPokemon={pokemonList.length}
-          paginate={paginate}
-        />
+      <GlobalStyles />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={
+          <DisplayPokemon 
+            pokemonList={currentPokemon} 
+            loading={loading}
+            pokemonPerPage={pokemonPerPage}
+            totalPokemon={pokemonList.length}
+            paginate={paginate}
+          />
+        }/>
+        <Route path="/about" element={<About />}/>
+      </Routes>
       </>
     );
   }

@@ -1,3 +1,4 @@
+import { PaginationContainer } from "../Pagination/Pagination.style"
 const Pagination = ({ pokemonPerPage, totalPokemon, paginate }) => {
     const pageNumbers = []
 
@@ -5,15 +6,17 @@ const Pagination = ({ pokemonPerPage, totalPokemon, paginate }) => {
         pageNumbers.push(i)
     }
     return ( 
-        <nav>
-            {
-            pageNumbers.map(number => (
-                <button onClick={() => paginate(number)} key={number}>
-                    {number}
-                </button>
-            ))
-            }
-        </nav>
+        <PaginationContainer>
+            <nav>
+                {
+                pageNumbers.map(number => (
+                    <button onClick={() => paginate(number)} key={number}>
+                        {number}
+                    </button>
+                ))
+                }
+            </nav>
+        </PaginationContainer>
      );
 }
  
