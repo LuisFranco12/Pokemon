@@ -18,15 +18,6 @@ export const DisplayPokemonContainer = styled.div`
         width: 60%;
     }
 
-    .img-div {
-        // background-color: lightgray;
-        border: 2px solid red;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
     .pokemon-cell {
         border-radius: 2rem;
         border: 1px solid orange;

@@ -12,12 +12,10 @@ const DisplayPokemon = ({ pokemonList, loading, pokemonPerPage, totalPokemon, pa
                 {
                     pokemonList.map(pokemon => (
                         <div className="pokemon-cell" key={pokemon.name}>
-                            {/* <div className="img-div"> */}
                                 <img 
                                     src={pokemon.sprites.other.home.front_default} 
                                     alt={pokemon.name}
                                 />
-                            {/* </div> */}
                             <h3>{pokemon.name}</h3>
                         </div>
                     ))
