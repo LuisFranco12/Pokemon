@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Pagination from "../Pagination/Pagination";
 import { DisplayPokemonContainer } from "./DisplayPokemon.style";
 const DisplayPokemon = ({ pokemonList, loading, pokemonPerPage, totalPokemon, paginate }) => {
@@ -11,13 +12,15 @@ const DisplayPokemon = ({ pokemonList, loading, pokemonPerPage, totalPokemon, pa
             <DisplayPokemonContainer>
                 {
                     pokemonList.map(pokemon => (
-                        <div className="pokemon-cell" key={pokemon.name}>
+                        <Link to={`/pokemon/${pokemon.name}`} key={pokemon.name} state={{...pokemon}}>
+                            <div className="pokemon-cell" key={pokemon.name}>
                                 <img 
                                     src={pokemon.sprites.other.home.front_default} 
                                     alt={pokemon.name}
                                 />
-                            <h3>{pokemon.name}</h3>
-                        </div>
+                                <h3>{pokemon.name}</h3>
+                            </div>
+                        </Link>
                     ))
                 }
             </DisplayPokemonContainer>

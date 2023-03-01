@@ -4,7 +4,7 @@ export const DisplayPokemonContainer = styled.div`
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 1rem;
+    margin-top: 5rem;
     width: 80%;
     height: 100%;
     display: grid;
@@ -36,6 +36,10 @@ export const DisplayPokemonContainer = styled.div`
     .pokemon, h3 {
         padding: 1rem;
         align-self: flex-start;
+    }
+
+    a {
+        text-decoration: none;
     }
 
         @media all and (min-width: 1500px) {

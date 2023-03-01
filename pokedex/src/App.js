@@ -5,6 +5,7 @@ import DisplayPokemon from "./components/DisplayPokemon/DisplayPokemon"
 import Navbar from "./components/Navbar/Navbar"
 import  GlobalStyles  from "./GlobalStyles"
 import About from "./Pages/About/About"
+import PokemonPage from "./Pages/PokemonPage/PokemonPage"
 function App() {
   const [pokemonList, setPokemonList] = useState(null)
   const [loading, setLoading] = useState(false)
@@ -43,6 +44,7 @@ function App() {
             paginate={paginate}
           />
         }/>
+        <Route path="/pokemon/:name" element={<PokemonPage />}/>
         <Route path="/about" element={<About />}/>
       </Routes>
       </>
