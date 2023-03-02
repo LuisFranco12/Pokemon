@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-const PokemonStats = ({item, bgcolor, progress, height}) => {
+const PokemonStats = ({item, progress, height}) => {
     const [style, setStyle] = useState({});
 
     setTimeout(() => {
@@ -8,7 +8,7 @@ const PokemonStats = ({item, bgcolor, progress, height}) => {
         const Childdiv = {
             width: `${progress}%`,
             height: '100%',
-            borderRadius: 40,
+            borderRadius: '40px',
             maxWidth: '100%',
             transition: '2s ease'
           }
@@ -18,10 +18,10 @@ const PokemonStats = ({item, bgcolor, progress, height}) => {
     },100)
 
     const Parentdiv = {
-        height: height,
+        height: '10px',
         width: '50%',
         backgroundColor: 'whitesmoke',
-        borderRadius: 40,
+        borderRadius: '40px',
       }
 
 

@@ -23,7 +23,11 @@ export const PaginationContainer = styled.div`
     button:hover {
         background-color: #323135;
         background-color: #2d2d2d;
-        // color: black;
+    }
+
+    button:focus {
+        background-color: #2d2d2d;
+
     }
 
 `

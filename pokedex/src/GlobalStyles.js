@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
         background-color: #9d8eaf;
         background-color: #7279aa;
         font-family: 'Kanit', sans-serif;
+        color: #eee;
     }
 
     #root {

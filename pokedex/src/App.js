@@ -42,6 +42,8 @@ function App() {
             pokemonPerPage={pokemonPerPage}
             totalPokemon={pokemonList.length}
             paginate={paginate}
+            input={input}
+            setInput={setInput}
           />
         }/>
         <Route path="/pokemon/:name" element={<PokemonPage />}/>
