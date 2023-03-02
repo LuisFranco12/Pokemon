@@ -48,11 +48,12 @@ export const PokemonPageContainer = styled.div`
     }
 
     .stats-cell {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 10px 0;
-        gap: 50px;
+        gap: 30px;
     }
 
     .progress-bar {

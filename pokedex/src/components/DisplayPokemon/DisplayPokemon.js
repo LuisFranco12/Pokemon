@@ -23,7 +23,7 @@ const DisplayPokemon = ({ pokemonList, loading, pokemonPerPage, totalPokemon, pa
                                     src={pokemon.sprites.other.home.front_default} 
                                     alt={pokemon.name}
                                 />
-                                <h3>{pokemon.name}</h3>
+                                <h3>{pokemon.name.toUpperCase()}</h3>
                             </div>
                         </Link>
                     ))

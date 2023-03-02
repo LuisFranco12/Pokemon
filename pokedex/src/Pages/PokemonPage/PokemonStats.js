@@ -27,7 +27,7 @@ const PokemonStats = ({item, progress, height}) => {
 
     return ( 
         <div className="stats-cell">
-            <div className="text">{item.stat.name}</div>
+            <div className="text">{item.stat.name.toUpperCase()}</div>
             <div>{item.base_stat}</div>
             
             <div className="progress-bar">
