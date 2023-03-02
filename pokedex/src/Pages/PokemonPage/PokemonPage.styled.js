@@ -55,8 +55,15 @@ export const PokemonPageContainer = styled.div`
         gap: 50px;
     }
 
+    .progress-bar {
+        height: 10px;
+        width: 50%;
+        background-color: #eee;
+        border-radius: 40px;
+    }
+
     .progress-complete {
-        background: green;
+        background: #333b66;
         width: 0;
     }
 
@@ -74,6 +81,10 @@ export const PokemonPageContainer = styled.div`
     .heading {
         color: black;
         text-decoration: underline;
+        text-align: center;
+    }
+
+    .info {
         text-align: center;
     }
 
@@ -110,8 +121,7 @@ export const PokemonPageContainer = styled.div`
     }
 
     .abilities {
-        display: flex;
-        gap: 15px;
+        text-align: center;
     }
     @media all and (min-width: 1500px) {
     img {

@@ -17,12 +17,12 @@ const PokemonStats = ({item, progress, height}) => {
 
     },100)
 
-    const Parentdiv = {
-        height: '10px',
-        width: '50%',
-        backgroundColor: 'whitesmoke',
-        borderRadius: '40px',
-      }
+    // const Parentdiv = {
+    //     height: '10px',
+    //     width: '50%',
+    //     backgroundColor: 'whitesmoke',
+    //     borderRadius: '40px',
+    //   }
 
 
     return ( 
@@ -30,7 +30,7 @@ const PokemonStats = ({item, progress, height}) => {
             <div className="text">{item.stat.name}</div>
             <div>{item.base_stat}</div>
             
-            <div style={Parentdiv}>
+            <div className="progress-bar">
                 <div className="progress-complete" style={style}>
                 </div>
             </div>

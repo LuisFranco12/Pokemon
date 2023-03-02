@@ -1,6 +1,4 @@
-export async function FetchPokemonList(changeState, page, limit) {
-    const offset = 9 * (page - 1);
-  
+export async function FetchPokemonList(changeState, offset, limit) {
     const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
   
     const response = await fetch(url);

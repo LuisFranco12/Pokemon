@@ -32,11 +32,11 @@ const PokemonPage = () => {
                     <div className="height-weight-container">
                         <div className="height">
                             <div className="heading">Height</div>
-                            <div> {(state.height / 3.048).toFixed(2)} Feet </div>
+                            <div className="info"> {(state.height / 3.048).toFixed(2)} Feet </div>
                         </div>
                         <div className="weight">
                             <div className="heading">Weight</div>
-                            <div> {(state.weight / 4.536).toFixed(1)} pounds </div>
+                            <div className="info"> {(state.weight / 4.536).toFixed(1)} pounds </div>
                         </div>
                     </div>
 

@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     setLoading(true)
-    FetchPokemonList(setPokemonList, 1, 151)
+    FetchPokemonList(setPokemonList, 0, 151)
     setLoading(false)
   }, [])
 
