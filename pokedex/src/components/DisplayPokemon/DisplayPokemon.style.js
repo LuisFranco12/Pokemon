@@ -12,7 +12,6 @@ export const DisplayPokemonContainer = styled.div`
     grid-template-columns: repeat(4, 1fr);
     row-gap: 1rem;
     column-gap: 1.5rem;
-    font-family: 'Kanit', sans-serif;
 
     img {
         width: 60%;
