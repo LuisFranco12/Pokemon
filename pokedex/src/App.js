@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import { FetchPokemonList } from "./api/FetchPokemonList"
 import { Routes, Route } from "react-router-dom"
+import  GlobalStyles  from "./GlobalStyles"
 import DisplayPokemon from "./components/DisplayPokemon/DisplayPokemon"
 import Navbar from "./components/Navbar/Navbar"
-import  GlobalStyles  from "./GlobalStyles"
 import About from "./Pages/About/About"
 import PokemonPage from "./Pages/PokemonPage/PokemonPage"
 import Footer from "./components/Footer/Footer"
@@ -13,7 +13,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1)
   const [pokemonPerPage] = useState(12)
   const [input, setInput] = useState('')
-  const [buttonColor, setButtonColor] = useState(false)
+
   useEffect(() => {
     setLoading(true)
     FetchPokemonList(setPokemonList, 0, 151)
