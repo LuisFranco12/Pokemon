@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const DisplayPokemonContainer = styled.div`
+    margin-top: 1.2rem;
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 5rem;
     width: 80%;
     height: 100%;
     display: grid;
     justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 1rem;
     column-gap: 1.5rem;

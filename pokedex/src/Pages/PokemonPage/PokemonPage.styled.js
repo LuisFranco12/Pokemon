@@ -1,19 +1,16 @@
 import styled from "styled-components";
 
 export const PokemonPageContainer = styled.div`
-    border: 2px solid black;
     height: 100%;
     display: grid;
     align-content: center;
+    padding: 2rem;
 
 
    .pokemon-page {
     padding: 10px; 
     display: flex;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
    }
@@ -29,6 +26,7 @@ export const PokemonPageContainer = styled.div`
 
     .img-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -125,9 +123,9 @@ export const PokemonPageContainer = styled.div`
         text-align: center;
     }
     @media all and (min-width: 1500px) {
-    img {
-        width: 20%;
-        
-    }
+        img {
+            width: 25%;
+            
+        }
     }
 `

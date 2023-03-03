@@ -6,13 +6,14 @@ import Navbar from "./components/Navbar/Navbar"
 import  GlobalStyles  from "./GlobalStyles"
 import About from "./Pages/About/About"
 import PokemonPage from "./Pages/PokemonPage/PokemonPage"
+import Footer from "./components/Footer/Footer"
 function App() {
   const [pokemonList, setPokemonList] = useState(null)
   const [loading, setLoading] = useState(false)
   const [currentPage, setCurrentPage] = useState(1)
   const [pokemonPerPage] = useState(12)
   const [input, setInput] = useState('')
-
+  const [buttonColor, setButtonColor] = useState(false)
   useEffect(() => {
     setLoading(true)
     FetchPokemonList(setPokemonList, 0, 151)
@@ -49,6 +50,7 @@ function App() {
         <Route path="/pokemon/:name" element={<PokemonPage />}/>
         <Route path="/about" element={<About />}/>
       </Routes>
+      <Footer />
       </>
     );
   }

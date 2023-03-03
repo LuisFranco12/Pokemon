@@ -7,7 +7,7 @@ const Navbar = () => {
                     <Link to="/">Pokedex</Link>
                     <div className="right-list-items">
                         <Link to="/about">About</Link>
-                        <li>Resources</li>
+                        <li><a href="https://pokeapi.co/">Resource</a></li>
                     </div>
                 </ul>
         </Container>

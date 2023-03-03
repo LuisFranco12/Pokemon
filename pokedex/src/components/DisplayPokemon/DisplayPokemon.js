@@ -12,8 +12,8 @@ const DisplayPokemon = ({ pokemonList, loading, pokemonPerPage, totalPokemon, pa
     }
     return ( 
         <>
-            <input onChange={handleChange} type="text" value={input}/>
-            <button>Search</button>
+            {/* <input onChange={handleChange} type="text" value={input}/>
+            <button>Search</button> */}
             <DisplayPokemonContainer>
                 {
                     pokemonList.filter(pokemon => pokemon.name.includes(input)).map(pokemon => (
