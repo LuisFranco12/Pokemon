@@ -10,7 +10,8 @@ A Pokedex built with React that allows users to search for and view information 
 1. click on the green "clone" button
 2. Copy the HTTPS or SSH link
 3. open the terminal and navigate to where you would like to clone the project
-4. run the command: -git clone https://github.com/username/Pokemon.git
+4. run the command: 
+-git clone https://github.com/username/Pokemon.git
     
 #### Then, navigate to the project directory and install the dependencies
     -cd Pokemon
