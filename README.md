@@ -20,12 +20,12 @@ A Pokedex with React that allows users to search for and view information about 
     -npm start
     
 ## Contribute
-feel free to contribute to this project by: 
-   -1)forking the repositry and then cloning it into your computer
-   -2)create a new branch for your changes
-   -3)add your changes and commit them(make sure its short and descriptive)
-   -4)push your changes to the fork
-   -5)make a pull request to the main repo
+feel free to contribute to this project by: :-
+   1)forking the repositry and then cloning it into your computer
+   2)create a new branch for your changes
+   3)add your changes and commit them(make sure its short and descriptive)
+   4)push your changes to the fork
+   5)make a pull request to the main repo
 
 ## Technologies used
   -React.js
