@@ -20,9 +20,9 @@ A Pokedex with React that allows users to search for and view information about 
     -npm start
 
 ## Technologies used  
-  -React.js
-  -styled-components
-  -[PokeAPI](https://pokeapi.co/).
+> React.js
+> styled-components
+> [PokeAPI](https://pokeapi.co/).
 
 ## Site
 [Site](https://pokelibrary.netlify.app/)
