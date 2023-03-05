@@ -1,4 +1,4 @@
-export async function FetchPokemonList(changeState, offset, limit) {
+export async function FetchPokemonList(oldState, changeState, offset, limit) {
     const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
   
     const response = await fetch(url);
@@ -12,4 +12,5 @@ export async function FetchPokemonList(changeState, offset, limit) {
     });
     const pokemonList = await Promise.all(promises);
     changeState(pokemonList);
+    oldState(pokemonList)
   }

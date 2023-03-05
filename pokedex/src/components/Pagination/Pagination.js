@@ -1,8 +1,8 @@
 import { PaginationContainer } from "../Pagination/Pagination.style"
 const Pagination = ({ pokemonPerPage, totalPokemon, paginate}) => {
     const pageNumbers = []
-
-    for(let i= 1; i <= Math.ceil(totalPokemon / pokemonPerPage); i++) {
+    const numberOfPages = Math.ceil(totalPokemon / pokemonPerPage)
+    for(let i= 1; i <= numberOfPages; i++) {
         pageNumbers.push(i)
     }
     return ( 

@@ -1,18 +1,22 @@
 import styled from "styled-components";
 
 export const DisplayPokemonContainer = styled.div`
-    margin-top: 1.2rem;
+    height: 100%;
+
+
+    .showpokemon {
     position: relative;
     margin-right: auto;
     margin-left: auto;
     width: 80%;
-    height: 100%;
+    height: 90%;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 1rem;
     column-gap: 1.5rem;
+    }
 
     img {
         width: 60%;

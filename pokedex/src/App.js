@@ -12,11 +12,10 @@ function App() {
   const [loading, setLoading] = useState(false)
   const [currentPage, setCurrentPage] = useState(1)
   const [pokemonPerPage] = useState(12)
-  const [input, setInput] = useState('')
-
+  const [oldList, setOldList] = useState(null)
   useEffect(() => {
     setLoading(true)
-    FetchPokemonList(setPokemonList, 0, 151)
+    FetchPokemonList(setOldList, setPokemonList, 0, 151)
     setLoading(false)
   }, [])
 
@@ -24,8 +23,7 @@ function App() {
     setCurrentPage(pageNumber)
   }
 
-  if(pokemonList) {
-
+  if(pokemonList && oldList) {
     // display 12 pokemon at a time
     const indexofLastPokemon = currentPage * pokemonPerPage
     const indeOfFirstPokemon = indexofLastPokemon - pokemonPerPage
@@ -34,17 +32,19 @@ function App() {
     return (
       <>
       <GlobalStyles />
-      <Navbar />
+      <Navbar setPokemonList={setPokemonList} oldList={oldList} setCurrentPage={setCurrentPage}/>
       <Routes>
         <Route path="/" element={
           <DisplayPokemon 
-            pokemonList={currentPokemon} 
+            pokemonList={currentPokemon}
+            setPokemonList={setPokemonList} 
             loading={loading}
+            setLoading={setLoading}
+            setCurrentPage={setCurrentPage}
             pokemonPerPage={pokemonPerPage}
             totalPokemon={pokemonList.length}
             paginate={paginate}
-            input={input}
-            setInput={setInput}
+            oldList={oldList}
           />
         }/>
         <Route path="/pokemon/:name" element={<PokemonPage />}/>
