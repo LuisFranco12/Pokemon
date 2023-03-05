@@ -16,7 +16,7 @@ A Pokedex with React that allows users to search for and view information about 
     -cd Pokemon
     -npm install
 
-#### Finally, run the project by typing
+#### Finally, run the project by typing the command
     -npm start
 
 ## Technologies used  
