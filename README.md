@@ -14,7 +14,6 @@ A Pokedex built with React that allows users to search for and view information 
 
     -git clone https://github.com/username/Pokemon.git
     
-    -hello
 #### Then, navigate to the project directory and install the dependencies
     -cd Pokemon
     
