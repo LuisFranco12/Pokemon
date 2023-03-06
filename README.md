@@ -22,7 +22,7 @@ cd Pokemon
 npm install
 ```
 
-##### Finally, run the project by typing the command
+##### Finally, run the project by typing the command below
     npm start
 
 ## Technologies used  
