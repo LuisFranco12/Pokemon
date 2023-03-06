@@ -1,5 +1,5 @@
 # pokedex
-A digital encyclopedia of the first 151 pokemon.
+A digital encyclopedia for the first 151 pokemon.
 ![image](https://user-images.githubusercontent.com/108766758/223137078-71e2854b-54ad-44ed-b84a-1d7a1021ac1b.png)
 
 
