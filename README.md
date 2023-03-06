@@ -3,7 +3,7 @@ A digital encyclopedia of the first 151 pokemon.
 ![image](https://user-images.githubusercontent.com/108766758/222988739-b80ea013-6939-441e-b3ad-aa9af435ecb5.png)
 
 ## Description
-A Pokedex built with React that allows users to search for and view information about the first generation(151) Pokemon. this Pokedex uses data from the [PokeAPI](https://pokeapi.co/) and displays it in a user-friendly interface.
+A Pokedex built with React that allows users to search for and view information about the first generation(151) Pokemon. This Pokedex uses data from the [PokeAPI](https://pokeapi.co/) and displays it in a user-friendly interface.
 
 ## Installation
 ##### To install, first clone the repository to your computer
