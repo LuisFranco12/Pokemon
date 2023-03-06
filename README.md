@@ -28,10 +28,10 @@ npm install
 ## Challenge
 My biggest challenge working with the PokéAPI. The API has a lot of nested data structures, which made it difficult to retrieve the information I  needed. 
 
-I overcame the API challenge by mapping through the results array on the "https://pokeapi.co/api/v2/pokemon/" url and then making another fetch request for every pokemon url that I want to display and saving the returned array in a new variable.
+I overcame the API challenge by mapping through the results array on the "https://pokeapi.co/api/v2/pokemon/" url and then making a fetch request to the url's of every 1st generation pokemon that I wanted to be displayed and saving the returned array in a variable.
 
 ## Unsolved Problem
-One unsolved problem is implementing a way to hide pagination numbers when there are alot of pokemon being fetched from the PokeAPI. This would make the website look cleaner
+One unsolved problem is implementing a way to hide pagination numbers when there are a large amount of pokemon being fetched from the PokeAPI. This would make the website look cleaner
 
 ## Technologies used  
 + React.js
