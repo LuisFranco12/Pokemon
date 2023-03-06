@@ -4,7 +4,7 @@ A digital encyclopedia for the first 151 pokemon.
 
 
 ## Description
-A Pokedex built with React that allows users to search for and view information about the first generation(151) Pokemon. This Pokedex uses data from the [PokeAPI](https://pokeapi.co/) and displays it in a user-friendly interface.
+A Pokedex built with React that allows users to search for and view information about the first-generation(151) Pokemon. This Pokedex uses data from the [PokeAPI](https://pokeapi.co/) and displays it in a user-friendly interface.
 
 ## Installation
 ##### To install, first clone the repository to your computer
@@ -29,7 +29,7 @@ npm install
 ## Challenge
 My biggest challenge was working with the PokéAPI. The API has a lot of nested data structures, which made it difficult to retrieve the information I  needed. 
 
-To overcome the challenge of working with the PokéAPI, I implemented a solution that involved mapping through the results array on the "https://pokeapi.co/api/v2/pokemon/" endpoint. For each Pokémon in the array, I made a separate fetch request to the corresponding url to retrieve the necessary information. Specifically, I fetched the URLs of all first-generation Pokémon that I wanted to display and saved the returned array in a variable. 
+To overcome the challenge of working with the PokéAPI, I implemented a solution that involved mapping through the results array on the "https://pokeapi.co/api/v2/pokemon/" endpoint. For each Pokémon in the array, I made a separate fetch request to the corresponding URL to retrieve the necessary information. Specifically, I fetched the URLs of all first-generation Pokémon that I wanted to display and saved the returned array in a variable. 
 
 ## Unsolved Problem
 A improvement that could be made is implementing a way to hide pagination numbers when there is a large amount of pokemon being fetched from the PokeAPI. This would make the website look cleaner.
